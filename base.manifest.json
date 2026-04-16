@@ -1,18 +1,18 @@
 {
   "manifest_version": 3,
-  "name": "TacticDev Tab - developer news",
+  "name": "Hackertab.dev - developer news",
   "description": "All developer news in one tab",
-  "version": "1.0.0",
+  "version": "1.26.2",
   "chrome_url_overrides": {
     "newtab": "index.html"
   },
   "host_permissions": [
-    "https://*.tacticdev.com/*"
+    "https://*.hackertab.dev/*"
   ],
   "content_scripts": [
     {
       "matches": [
-        "https://tacticdev.com/*"
+        "https://hackertab.dev/*"
       ],
       "run_at": "document_start",
       "js": [
@@ -25,9 +25,5 @@
     "32": "/logos/logo32.png",
     "48": "/logos/logo48.png",
     "128": "/logos/logo128.png"
-  },
-  "background": {
-    "service_worker": "background.js"
-  },
-  "action": {}
+  }
 }
